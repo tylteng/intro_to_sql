@@ -1,0 +1,35 @@
+Exercise 1
+SELECT * FROM Robots WHERE source = 'Star Wars';
+
+Exercise 2
+SELECT * FROM Robots WHERE personality = 'anxious';
+
+Exercise 3
+SELECT * FROM Recipes WHERE nut_free = 't';
+
+Exercise 4
+SELECT COUNT(*) FROM Recipes WHERE gluten_free = 't' AND vegetarian = 'f';
+
+Exercise 5
+SELECT * FROM Animals WHERE number_of_legs = (SELECT MAX (number_of_legs)FROM Animals);
+
+Exercise 6
+SELECT name FROM Recipes WHERE minutes_required = (SELECT MIN(minutes_required) FROM Recipes);
+
+Exercise 7
+SELECT name FROM Recipes WHERE minutes_required = (SELECT Max(minutes_required) FROM Recipes);
+
+Exercise 8
+SELECT * FROM Robots WHERE name LIKE 'M%';
+
+Exercise 9
+SELECT COUNT (*) FROM Board_games WHERE max_players >= 8;
+
+Exercise 10
+SELECT * FROM Animals WHERE swimming = 't' AND egg_laying = 't';
+
+Exercise 11
+SELECT * FROM Animals WHERE swimming = 't' AND egg_laying = 't' AND flying = 'f';
+
+Exercise 12
+SELECT * FROM Board_games WHERE max_players = (SELECT MAX(max_players) FROM Board_games);
